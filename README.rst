@@ -2,7 +2,7 @@
 CouchDB-Formula
 ===============
 
-Installs and configures `CouchDB (<http://couchdb.apache.org>_)` from source and its dependencies.
+Installs and configures `CouchDB (<http://couchdb.apache.org>)` from source and its dependencies.
 
 .. note::
 
