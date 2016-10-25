@@ -1,11 +1,11 @@
-include: 
+include:
   - .install
+
+{% from "couchdb/map.jinja" import couchdb with context %}
 
 couchdb_remove:
   cmd.run:
     - name: make uninstall
-    - cwd: /tmp/couch_db/apache-couchdb-1.6.1/
+    - cwd: {{couchdb.tmp_dir}}apache-couchdb-{{couchdb.version}}/
     - require:
       - cmd: couchdb_install
-
-
